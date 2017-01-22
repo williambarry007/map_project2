@@ -32,8 +32,9 @@ function initMap() {
 	};
 
 	// Create a <script> tag and set the USGS URL as the source.
-	var script = document.createElement('script');
-		// This example uses a local copy of the GeoJSON stored at
-	    script.src = 'js/apiary_GeoJSONP.js';
-	  	document.getElementsByTagName('head')[0].appendChild(script);
-	};
+	//var script = document.createElement('script');
+	//	// This example uses a local copy of the GeoJSON stored at
+	//    script.src = 'js/apiary_GeoJSONP.js';
+	//  	document.getElementsByTagName('head')[0].appendChild(script);
+	//};
+}
