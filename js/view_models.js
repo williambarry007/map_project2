@@ -5,6 +5,11 @@ var Apairy = function(data) {
   this.longitude = ko.observable(data.geometry.coordinates[1]);
   this.fieldName = ko.observable(data.fieldName);
   this.owner     = ko.observable(data.owner);
+    
+	this.marker = new google.maps.Marker({
+	  position: new google.maps.LatLng(data.geometry.coordinates[0],data.geometry.coordinates[1]),
+	  map: map
+	});
 }
 
 // Receives array of apiary data
